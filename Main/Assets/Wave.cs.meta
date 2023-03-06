@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 39308e4cc039b68449fda7af9c4141b0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - Wavesprite: {fileID: 926945933481342942, guid: 64ca44f56d1630f458bcef7e1459ced2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
