@@ -41,14 +41,14 @@ public class Drake_Movement : MonoBehaviour
         if (movement > 0f)
         {
             State = PlayerAnimator.Player_Running;
-            sprite.flipX=false;
+            transform.rotation=Quaternion.Euler(0,0,0);
             
         }
         else if (movement < 0f)
         {
             State = PlayerAnimator.Player_Running;
-            sprite.flipX = true;
-            
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+
         }
         else
         {

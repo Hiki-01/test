@@ -15,6 +15,21 @@ public class Sword_Trap : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Sword.SetActive(true);
+            if (Sword.CompareTag("Trap"))
+            {
+                Destroy(Sword, 5);
+            }
         }  
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Invoke("sword", 5);
+    }
+    void sword()
+    {
+        if (Sword.CompareTag("Text"))
+        {
+            Sword.SetActive(false);
+        }
     }
 }

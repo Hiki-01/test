@@ -11,6 +11,10 @@ public class platform_anim : MonoBehaviour
     {
         if (Vector2.Distance(roadway[roadwayindex].transform.position, transform.position)<0.1f) 
         {
+            if(gameObject.CompareTag("Not Boss"))
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
             roadwayindex++;
             if (roadwayindex >= roadway.Length) 
             {

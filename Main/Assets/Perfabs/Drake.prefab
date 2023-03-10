@@ -526,6 +526,7 @@ MonoBehaviour:
   current_hp: {fileID: 0}
   current_Lifes: {fileID: 0}
   Scence: 0
+  Deathsound: {fileID: 7371366892767836228}
 --- !u!114 &7371366892767836224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,11 +539,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e3712af95cfbdd4d82bf00c6dffa88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jump: 14
-  Movement: 7
+  jump: 10
+  Movement: 10
+  rb: {fileID: 7371366892767836233}
+  sprite: {fileID: 7371366892767836234}
   jumpsound: {fileID: 7371366892767836230}
   JumpingLayer:
     serializedVersion: 2
     m_Bits: 8
-  Wave: {fileID: 7508031687318702287, guid: 2758e556f38f65642bbf2d33563fed07, type: 3}
+  Wave: {fileID: 1472144992650521938, guid: 64ca44f56d1630f458bcef7e1459ced2, type: 3}
   wavepos: {fileID: 7371366891882456890}

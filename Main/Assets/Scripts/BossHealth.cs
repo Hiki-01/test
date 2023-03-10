@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-    [SerializeField] private const int HP = 400;
+    [SerializeField] private  int HP = 500;
     [SerializeField] private int current_HP;
     [SerializeField] private Text current_hp;
-   
-    
+    [SerializeField] private Animator Death;
     [SerializeField] private int Scence;
  
 
@@ -26,20 +25,22 @@ public class BossHealth : MonoBehaviour
         current_hp.text = "Hp: " + current_HP.ToString();
         if (current_HP <= 0)
         {
-            loadScence();
+           Death.SetTrigger("Death");
         }
-
     }
     public void loadScence()
     {
         SceneManager.LoadScene(Scence);
     }
-    [SerializeField] private Transform spiderversepos;
+   [SerializeField] private Transform spiderversepos;
     [SerializeField] private GameObject SpiderVerse;
-  public  void Pos()
+    public void Pos()
     {
         Instantiate(SpiderVerse, spiderversepos.position, spiderversepos.rotation);
 
 
     }
 }
+    
+    
+
