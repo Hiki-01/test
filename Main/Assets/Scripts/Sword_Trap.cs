@@ -18,6 +18,7 @@ public class Sword_Trap : MonoBehaviour
             if (Sword.CompareTag("Trap"))
             {
                 Destroy(Sword, 5);
+                gameObject.SetActive(false);
             }
         }  
     }

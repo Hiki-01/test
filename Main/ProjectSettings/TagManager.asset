@@ -12,10 +12,10 @@ TagManager:
   - Spider
   - Boss
   - Wave
-  - PointA
-  - PointB
   - Text
   - Not Boss
+  - Point1
+  - Point2
   layers:
   - Default
   - TransparentFX

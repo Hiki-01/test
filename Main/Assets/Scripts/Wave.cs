@@ -14,8 +14,9 @@ public class Wave : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         BossHealth Damage = collision.GetComponent<BossHealth>();
+        EnimeyHealth Damagee = collision.GetComponent<EnimeyHealth>();
         if (Damage != null) {
-            Damage.Damage(20);
+            Damage.Damage(25);
             if (collision.gameObject.CompareTag("Spider"))
             {
                 Destroy(gameObject);
@@ -23,6 +24,13 @@ public class Wave : MonoBehaviour
             Destroy(gameObject,Timer);
 
         }
+        if (Damagee != null)
+        {
+            Damagee.Damage(50);
+            Destroy(gameObject, Timer);
+
+        }
+
     }
 
 }

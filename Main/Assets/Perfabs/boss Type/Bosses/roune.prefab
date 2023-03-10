@@ -231,9 +231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ce035b0af30a84eaa6e322c15b8d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 500
   current_HP: 500
   current_hp: {fileID: 0}
   Death: {fileID: 8291037100162728508}
-  Scence: 0
+  Scence: 7
   spiderversepos: {fileID: 8291037099966658349}
   SpiderVerse: {fileID: 7508031687318702287, guid: 2758e556f38f65642bbf2d33563fed07, type: 3}

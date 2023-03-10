@@ -235,6 +235,6 @@ MonoBehaviour:
   current_HP: 0
   current_hp: {fileID: 0}
   Death: {fileID: 7770556424021946907}
-  Scence: 0
+  Scence: 5
   spiderversepos: {fileID: 8392907002357000878}
   SpiderVerse: {fileID: 1039476467070271824}

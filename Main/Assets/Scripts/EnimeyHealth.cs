@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class EnimeyHealth : MonoBehaviour
 {
-    [SerializeField] private  int HP = 500;
+    [SerializeField] private  int HP = 50;
     [SerializeField] private int current_HP;
     [SerializeField] private Animator Death;
-    [SerializeField] private int Scence;
  
-
-
-
     void Start()
     {
         current_HP = HP;
@@ -26,10 +22,6 @@ public class EnimeyHealth : MonoBehaviour
         {
            Death.SetTrigger("Death");
         }
-    }
-    public void loadScence()
-    {
-        SceneManager.LoadScene(Scence);
     }
     public void destroy()
     {
